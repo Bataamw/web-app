@@ -6,9 +6,8 @@ class Modal {
     this.events();
   }
   events() {
-    //Хаах товчлуур дарагдсан эсэхийг ажиглах
     this.closeIcon.addEventListener("click", () => this.closeModal());
-    //Keyboard дээрээс ямар нэг товчлуур дарагдсан эсэхийг ажиглах
+
     document.addEventListener("keyup", (e) => this.keyPressHandler(e));
   }
   keyPressHandler(e) {
@@ -27,9 +26,9 @@ class Modal {
       "beforeend",
       `<div class="modal">
     <div class="modal__inner">
-      <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Хамт <strong>Аялах</strong></h2>
+      <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Өрхийн <strong>Төсөв</strong></h2>
       <div class="wrapper wrapper--narrow">
-        <p class="modal__description">Бид тун удахгүй онлайнаар захиалга өгөх системийг нээх бөгөөд, та одоогоор доорхи сошиал платформуудаар дамжиуулж бидэнтэй холбогдох боломжтой!</p>
+        <p class="modal__description">Бид тун удахгүй онлайнаар захиалга өгөх системийг нээх бөгөөд, та одоогоор доорхи сошиал платформуудаар дамжуулж бидэнтэй холбогдох боломжтой!</p>
       </div>
       <div class="social-icons">
         <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>

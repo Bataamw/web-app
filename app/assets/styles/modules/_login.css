@@ -1,0 +1,63 @@
+.login-container {
+  min-height: 100vh;
+  background-color: #fbf3ea;
+  position: relative;
+  padding-top: 50px;
+  .login-header {
+    text-align: center;
+  }
+  .login-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: table;
+    h2 {
+      display: block;
+      border-bottom: 1px solid #ccd6dd;
+      margin: 0px 0px 10px;
+      padding: 0px 0px 15px;
+      font-size: 100%;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: #333333;
+    }
+    .login__reset {
+      margin-top: 20px;
+
+      a {
+        color: #0084b4;
+        text-decoration: none;
+      }
+    }
+    input {
+      padding: 10px;
+      outline-color: #b9f616;
+      border: 1px solid #d2d2d2;
+      margin: 5px 0px;
+      font: normal 16px / 20px "PT Sans Narrow", tahoma;
+    }
+  }
+  .login__submit {
+    color: #ffffff !important;
+    background-color: #8dc63f;
+    padding: 11px 100px;
+    border: 1px solid #8dc63f;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px auto;
+    display: block;
+    transition: all 0.3s;
+    &:hover {
+      background-color: inherit;
+      color: #8dc63f !important;
+      cursor: pointer;
+    }
+  }
+  .site-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}

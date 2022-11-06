@@ -31,13 +31,16 @@
     transform: translateX(-50%);
     transform-origin: 50% 0;
     transition: transform 0.3s ease-out;
-    background-color: $mainBlue;
-    padding: 14px 28px;
 
+    padding: 0px 10px;
+    img {
+      height: 100px;
+    }
     @mixin atMedium {
       left: auto;
+
       transform: translateX(0);
-      padding: 25px 36px;
+      padding: 0px 36px;
 
       .site-header--dark & {
         transform: scale(0.55);

@@ -9,7 +9,8 @@
   &__icon {
     display: block;
     margin: 0 auto;
-
+    height: 60px;
+    fill: $mainOrange;
     @mixin atSmall {
       position: absolute;
       left: 0;

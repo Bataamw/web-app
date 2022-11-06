@@ -6,9 +6,7 @@ class RevealOnScroll {
     this.itemsToReveal = els;
     this.browserHeight = window.innerHeight;
     this.hideInitially();
-    this.scrollThrottle = throttle(this.calcCaller, 100).bind(
-      this
-    ); /*Энэ throttle нь хэрэггүй үйлдэл хийхээс сэргийлэх талтай */
+    this.scrollThrottle = throttle(this.calcCaller, 100).bind(this);
     this.events();
   }
   events() {
@@ -19,7 +17,6 @@ class RevealOnScroll {
         this.browserHeight = window.innerHeight;
       }, 300)
     );
-    /*Энэ debounce нь resize дэлгэц өөрчлөгдөж байгаа эсэхийг шалгах үүрэгтэй */
   }
   calcCaller() {
     this.itemsToReveal.forEach((el) => {
